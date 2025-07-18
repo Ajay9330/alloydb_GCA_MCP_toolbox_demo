@@ -1,0 +1,24 @@
+{
+    "theme": "GitHub",
+      "mcpServers": {
+        "alloydb": {
+          "autoApprove": [
+            "list_tables",
+            "execute_sql"
+          ],
+          "disabled": false,
+        "command": "/home/akryadav/mcp/toolbox",
+        "args": ["--prebuilt","alloydb-postgres","--stdio"],
+        "env": {
+            "ALLOYDB_POSTGRES_PROJECT": "senseai-apprentices-25-26",
+            "ALLOYDB_POSTGRES_REGION": "us-east4",
+            "ALLOYDB_POSTGRES_CLUSTER": "hotel-cluster",
+            "ALLOYDB_POSTGRES_INSTANCE": "hotel-cluster-primary",
+            "ALLOYDB_POSTGRES_DATABASE": "hotel_db",
+            "ALLOYDB_POSTGRES_USER": "hotel_db_user",
+            "ALLOYDB_POSTGRES_PASSWORD": "password"
+          }
+        }
+      }
+    
+  }

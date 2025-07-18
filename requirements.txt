@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+pg8000
+python-dotenv
+pytest
+httpx
+pytest-dotenv
+google-cloud-alloydb-connector[pg8000]
