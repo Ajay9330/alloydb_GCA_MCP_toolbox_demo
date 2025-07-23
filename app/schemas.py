@@ -3,16 +3,28 @@ from typing import List, Optional
 from datetime import date, datetime
 import uuid
 
+class RoomTypeBase(BaseModel):
+    name: str
+
+class RoomTypeCreate(RoomTypeBase):
+    pass
+
+class RoomType(RoomTypeBase):
+    id: uuid.UUID
+    model_config = ConfigDict(from_attributes=True)
+
 class RoomBase(BaseModel):
     room_number: str
     price_per_night: float
 
 class RoomCreate(RoomBase):
     hotel_id: uuid.UUID
+    room_type_id: uuid.UUID
 
 class Room(RoomBase):
     id: uuid.UUID
     hotel_id: uuid.UUID
+    room_type: RoomType
     model_config = ConfigDict(from_attributes=True)
 
 class HotelBase(BaseModel):
@@ -36,6 +48,8 @@ class CustomerBase(BaseModel):
     last_name: str
     email: str
     phone_number: Optional[str] = None
+    address: Optional[str] = None
+    age: Optional[int] = None
 
 class CustomerCreate(CustomerBase):
     pass
