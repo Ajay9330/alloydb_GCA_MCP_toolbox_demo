@@ -84,33 +84,6 @@ ipython_config.py
 # pyenv
 .python-version
 
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if have platform-specific dependencies, or dependencies
-#   not listed in Pipfile, Pipfile.lock may not be shareable.
-# Pipfile.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   The same caveats apply.
-# poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   The same caveats apply.
-# pdm.lock
-pdm.toml
-
-# PEP 582; used by e.g. pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
 # Environments
 .env
 .venv
@@ -144,4 +117,6 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# Custom
+.gemini/
 videos/
